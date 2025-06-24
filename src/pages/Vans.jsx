@@ -1,5 +1,6 @@
 import Nav from "../components/nav"
 import { useState, useEffect } from "react"
+import {Link} from "react-router-dom"
 
 export default function Vans(){
 	const [Data, setData] = useState([])
@@ -23,17 +24,19 @@ export default function Vans(){
 			) : (
 				<div className="van-list-container">
             <h1>Explore our van options</h1>
-					<div className="van-list">
+					<div className="van-list">	
 						{Data.map((van) => (
 							<div className="van-tile" key={van.id}>
-								<img src={van.imageUrl} alt={van.name} className="van-image" />
-								<div className="van-info">
-                	<h3>{van.name}</h3>
-                	<p>${van.price}<span>/day</span></p>
-            		</div>
-            		<i className={`van-type ${van.type} selected`}>{van.type}</i>
-							</div>
-						))}
+								<Link to={`/vans/${van.id}`}>
+									<img src={van.imageUrl} alt={van.name} className="van-image" />
+									<div className="van-info">
+										<h3>{van.name}</h3>
+										<p>${van.price}<span>/day</span></p>
+									</div>
+									<i className={`van-type ${van.type} selected`}>{van.type}</i>
+								</Link>
+								</div>
+							))}				
 					</div>
 				</div>
       )}
