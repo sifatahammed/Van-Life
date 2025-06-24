@@ -7,6 +7,7 @@ export default function Nav(){
             <nav>
                 <Link to="/">Home</Link>
                 <Link to="/about">About</Link>
+                <Link to="/vans">Vans</Link>
             </nav>        
       </header>
 
