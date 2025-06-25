@@ -1,9 +1,11 @@
 import { useState, useEffect } from "react"
-import {Link} from "react-router-dom"
+import {Link, useSearchParams, NavLink} from "react-router-dom"
 
 export default function Vans(){
 	const [Data, setData] = useState([])
 	const [loading, setLoading] = useState(true);
+	const[searchParams, setsearchParams] = useSearchParams()
+	const typeFilter = searchParams.get("type")
 
 	useEffect(()=>{async function fetchdata(){
 		const res = await fetch("/api/vans")
@@ -15,15 +17,32 @@ export default function Vans(){
 	},[]
 	)
 
+	const filter = typeFilter? Data.filter((van)=>van.type===typeFilter) : Data
+	const createClass = (type) =>
+		`van-type ${type} ${typeFilter === type ? "selected" : ""}`
+
 	return(
 		<>
 			{loading ? (
       <div className="spinner"></div>
 			) : (
 				<div className="van-list-container">
-            <h1>Explore our van options</h1>
+					<h1>Explore our van options</h1>
+					<div className="van-list-container">
+						<Link to="?type=simple" className={createClass("simple")}>
+							Simple
+						</Link>
+						<Link to="?type=rugged" className={createClass("rugged")}>
+							Rugged
+						</Link>
+						<Link to="?type=luxury" className={createClass("luxury")}>
+							Luxury
+						</Link>
+
+						<Link to= "." relative="path" className="van-type clear-filters">Clear Filter</Link>
+					</div>
 					<div className="van-list">	
-						{Data.map((van) => (
+						{filter.map((van) => (
 							<div className="van-tile" key={van.id}>
 								<Link to={`/vans/${van.id}`}>
 									<img src={van.imageUrl} alt={van.name} className="van-image" />
