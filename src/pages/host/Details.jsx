@@ -1,6 +1,6 @@
-import {Link, Outlet } from "react-router-dom"
+import {Link} from "react-router-dom"
 
-export default function Dashboard (){
+export default function Details (){
     return(
         <>
             <h1>Placeholder</h1>     
