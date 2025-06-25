@@ -1,9 +1,10 @@
-import {Link} from "react-router-dom"
+import {useOutletContext} from "react-router-dom"
 
 export default function Price (){
+    const van = useOutletContext()
     return(
         <>
-            <h1>Placeholder3</h1>     
+        <h3 className="host-van-price">${van.price}<span>/day</span></h3>
         </>
         
     )

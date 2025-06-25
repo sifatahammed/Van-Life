@@ -1,10 +1,9 @@
-import {Link} from "react-router-dom"
+import {useOutletContext} from "react-router-dom"
 
 export default function Photo (){
+    const van = useOutletContext()
+
     return(
-        <>
-            <h1>Placeholder2</h1>     
-        </>
-        
+        <img src={van.imageUrl} className="host-van-detail-image" />     
     )
 }

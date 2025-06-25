@@ -5,17 +5,17 @@ import React from "react"
 export default function HostVanLayout (){
     const param = useParams()
     const [currentVan, setcurrentVan] = React.useState(null)
-        const [loading, setLoading] = React.useState(true);
-        
-        React.useEffect(()=>{async function fetchdata(){
-            const res = await fetch(`/api/vans/${param.id}`)
-            const data = await res.json()
-            setcurrentVan(data.vans)
-            setLoading(false);}
+    const [loading, setLoading] = React.useState(true);
     
-            fetchdata()
-        },[param.id]
-        )
+    React.useEffect(()=>{async function fetchdata(){
+        const res = await fetch(`/api/vans/${param.id}`)
+        const data = await res.json()
+        setcurrentVan(data.vans)
+        setLoading(false);}
+
+        fetchdata()
+    },[param.id]
+    )
     
 
     const activeStyles = {
@@ -23,20 +23,22 @@ export default function HostVanLayout (){
         textDecoration: "underline",
         color: "#161616"
     }
-    return(
-        <>
+   return (
+    <>
         {loading ? (
-         <div className="spinner"></div>
-			) : (
-            <div className="van-detail-container">
+            <div className="spinner"></div>
+        ) : (
+            <section>
                 {currentVan ? (
                     <>
                         <Link
                             to=".."
                             relative="path"
                             className="back-button"
-                        >&larr; <span>Back to all vans</span></Link>
-            
+                        >
+                            &larr; <span>Back to all vans</span>
+                        </Link>
+
                         <div className="host-van-detail-layout-container">
                             <div className="host-van-detail">
                                 <img src={currentVan.imageUrl} />
@@ -50,23 +52,44 @@ export default function HostVanLayout (){
                                     <h4>${currentVan.price}/day</h4>
                                 </div>
                             </div>
-                        </div>
-                        <header>
-                            <NavLink to = "." end style={({isActive}) => isActive ? activeStyles : null}>
-                            Details</NavLink>
-                            <NavLink to ="price" style={({isActive}) => isActive ? activeStyles : null}>
-                            Pricing</NavLink>
-                            <NavLink to = "photo" style={({isActive}) => isActive ? activeStyles : null}>
-                            Photos</NavLink>
-                        </header> 
-                    </>
-                ) : <h2>Failed to load van details. Please try again later.</h2>}
-            </div>)
-            }
 
-                      
-            <Outlet />
-        </>
-        
-    )
+                            <header>
+                                <NavLink
+                                    to="."
+                                    end
+                                    style={({ isActive }) =>
+                                        isActive ? activeStyles : null
+                                    }
+                                >
+                                    Details
+                                </NavLink>
+                                <NavLink
+                                    to="price"
+                                    style={({ isActive }) =>
+                                        isActive ? activeStyles : null
+                                    }
+                                >
+                                    Pricing
+                                </NavLink>
+                                <NavLink
+                                    to="photo"
+                                    style={({ isActive }) =>
+                                        isActive ? activeStyles : null
+                                    }
+                                >
+                                    Photos
+                                </NavLink>
+                            </header>
+
+                            {/* ✅ Child components rendered only when currentVan is ready */}
+                            <Outlet context={currentVan} />
+                        </div>
+                    </>
+                ) : (
+                    <h2>Failed to load van details. Please try again later.</h2>
+                )}
+            </section>
+        )}
+    </>
+)
 }
