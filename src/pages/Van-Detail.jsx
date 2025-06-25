@@ -1,4 +1,3 @@
-import Nav from "../components/nav.jsx"
 import React from "react"
 import { useParams } from "react-router-dom"
 
