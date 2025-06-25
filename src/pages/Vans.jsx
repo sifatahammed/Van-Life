@@ -18,7 +18,6 @@ export default function Vans(){
 
 	return(
 		<>
-			<Nav /> 
 			{loading ? (
       <div className="spinner"></div>
 			) : (

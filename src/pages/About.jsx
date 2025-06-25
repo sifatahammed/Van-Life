@@ -5,7 +5,6 @@ import { Link } from "react-router-dom"
 export default function About(){
     return(
         <>
-			<Nav />
 			<div className="about-page-container">
             <img src={bgImg} className="about-hero-image" />
             <div className="about-page-content">

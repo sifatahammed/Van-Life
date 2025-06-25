@@ -19,7 +19,6 @@ export default function VanDetails(){
 
     return(
         <>
-        <Nav/>
         {loading ? (
          <div className="spinner"></div>
 			) : (
