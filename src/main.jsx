@@ -3,6 +3,7 @@ import { createRoot } from 'react-dom/client'
 import Home from "./pages/Home"
 import About from "./pages/About"
 import Vans from "./pages/Vans.jsx"
+import NotFound404 from "./pages/NotFound404.jsx"
 import VanDetails from "./pages/Van-Detail.jsx"
 import Dashboard from "./pages/host/Dashboard.jsx"
 import Reviews from "./pages/host/reviews.jsx"
@@ -37,6 +38,7 @@ function App(){
           <Route path='about' element= {<About />}/>
           <Route path='vans' element= {<Vans />}/>   
           <Route path='vans/:id' element= {<VanDetails />}/>    
+          <Route path='*' element= {<NotFound404 />}/>    
         </Route>
       </Routes>    
     </BrowserRouter>

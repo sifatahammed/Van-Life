@@ -46,7 +46,7 @@ export default function Vans(){
 					<div className="van-list">	
 						{filter.map((van) => (
 							<div className="van-tile" key={van.id}>
-								<Link to={`/vans/${van.id}`}>
+								<Link to={van.id} state = {typeFilter?({search : searchParams.toString()}): null}>
 									<img src={van.imageUrl} alt={van.name} className="van-image" />
 									<div className="van-info">
 										<h3>{van.name}</h3>

@@ -1,14 +1,18 @@
 import React from "react"
-import { useParams, Link } from "react-router-dom"
+import { useParams, Link, useLocation } from "react-router-dom"
 
 export default function VanDetails(){
     const param = useParams()
     const [van, setVan] = React.useState(null)
     const [loading, setLoading] = React.useState(true);
+    const location = useLocation()
+    const typeParam = new URLSearchParams(location.state?.search).get("type")
+
     
     React.useEffect(()=>{async function fetchdata(){
         const res = await fetch(`/api/vans/${param.id}`)
         const data = await res.json()
+        
         setVan(data.vans)
         setLoading(false);}
 
@@ -23,11 +27,15 @@ export default function VanDetails(){
 			) : (
             <div className="van-detail-container">
                 <Link
-                            to=".."
+                            to={`..?${location.state?.search|| ""}`}
                             relative="path"
                             className="back-button"
                         >
-                            &larr; <span>Back to all vans</span>
+                            &larr; <span>
+                                {`Back to ${
+                                    typeParam ? typeParam.charAt(0).toUpperCase() + typeParam.slice(1) : "All"
+                                } vans`}
+                                </span>
                         </Link>
                 {van ? (
                     <div className="van-detail">
