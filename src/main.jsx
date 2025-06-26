@@ -14,6 +14,7 @@ import Price from "./pages/host/price.jsx"
 import Photo from "./pages/host/Photo.jsx"
 import "./assets/server.js"
 import Layout from "./components/layout.jsx"
+import vansloader from "./components/vansloader.jsx"
 import HostLayout from "./components/hostlayout.jsx"
 import HostVanLayout from "./components/HostVanLayout.jsx"
 
@@ -32,7 +33,7 @@ const router = createBrowserRouter(createRoutesFromElements(
             </Route>
           </Route>
           <Route path='about' element= {<About />}/>
-          <Route path='vans' element= {<Vans />}/>   
+          <Route path='vans' element= {<Vans/>} loader = {vansloader}/>   
           <Route path='vans/:id' element= {<VanDetails />}/>    
           <Route path='*' element= {<NotFound404 />}/>    
         </Route>

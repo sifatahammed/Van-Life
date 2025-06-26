@@ -1,31 +1,29 @@
-import { useState, useEffect } from "react"
-import {Link, useSearchParams, NavLink} from "react-router-dom"
+// import { useState, useEffect } from "react"
+import {Link, useSearchParams, NavLink, useLoaderData} from "react-router-dom"
 
 export default function Vans(){
-	const [Data, setData] = useState([])
-	const [loading, setLoading] = useState(true);
+	// const [Data, setData] = useState([])
+	// const [loading, setLoading] = useState(true);
 	const[searchParams, setsearchParams] = useSearchParams()
 	const typeFilter = searchParams.get("type")
+	const Data = useLoaderData()
 
-	useEffect(()=>{async function fetchdata(){
-		const res = await fetch("/api/vans")
-		const data = await res.json()
-		setData(data.vans)
-		setLoading(false);}
+	// useEffect(()=>{async function fetchdata(){
+	// 	const res = await fetch("/api/vans")
+	// 	const data = await res.json()
+	// 	setData(data.vans)
+	// 	setLoading(false);}
 
-		fetchdata()
-	},[]
-	)
+	// 	fetchdata()
+	// },[]
+	//)
 
 	const filter = typeFilter? Data.filter((van)=>van.type===typeFilter) : Data
 	const createClass = (type) =>
 		`van-type ${type} ${typeFilter === type ? "selected" : ""}`
 
 	return(
-		<>
-			{loading ? (
-      <div className="spinner"></div>
-			) : (
+
 				<div className="van-list-container">
 					<h1>Explore our van options</h1>
 					<div className="van-list-container">
@@ -58,7 +56,7 @@ export default function Vans(){
 							))}				
 					</div>
 				</div>
-      )}
-		</>
+
+
 	)
 }
