@@ -1,4 +1,4 @@
-import { BrowserRouter, Routes, Route, Link } from 'react-router-dom'
+import { createBrowserRouter, createRoutesFromElements, RouterProvider, Route } from 'react-router-dom'
 import { createRoot } from 'react-dom/client'
 import Home from "./pages/Home"
 import About from "./pages/About"
@@ -17,12 +17,8 @@ import Layout from "./components/layout.jsx"
 import HostLayout from "./components/hostlayout.jsx"
 import HostVanLayout from "./components/HostVanLayout.jsx"
 
-
-function App(){
-  return(
-    <BrowserRouter>     
-      <Routes>
-        <Route element = {<Layout/>}>
+const router = createBrowserRouter(createRoutesFromElements(
+  <Route element = {<Layout/>}>
           <Route path='/' element= {<Home />}/>
           <Route path='/host' element= {<HostLayout />}>
             <Route path='' element= {<Dashboard />} />           
@@ -40,8 +36,11 @@ function App(){
           <Route path='vans/:id' element= {<VanDetails />}/>    
           <Route path='*' element= {<NotFound404 />}/>    
         </Route>
-      </Routes>    
-    </BrowserRouter>
+))
+
+function App(){
+  return(
+    <RouterProvider router={router} />
   )
 }
 
