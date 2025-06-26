@@ -38,8 +38,10 @@ export default function Vans(){
 						<Link to="?type=luxury" className={createClass("luxury")}>
 							Luxury
 						</Link>
-
-						<Link to= "." relative="path" className="van-type clear-filters">Clear Filter</Link>
+						{typeFilter?
+						<Link to= "." relative="path" className="van-type clear-filters">
+						Clear Filter
+						</Link>:null}
 					</div>
 					<div className="van-list">	
 						{filter.map((van) => (
