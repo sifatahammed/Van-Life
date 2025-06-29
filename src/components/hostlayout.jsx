@@ -1,4 +1,5 @@
 import {NavLink, Outlet } from "react-router-dom"
+import React from "react"
 
 export default function Dashboard (){
     const activeStyles = {
@@ -8,7 +9,7 @@ export default function Dashboard (){
     }
     return(
         <>
-            <header>
+            <nav className="host-nav">
                 <NavLink to = '.' end style={({isActive}) => isActive ? activeStyles : null}>
                 Dashboard</NavLink>
                 <NavLink to = 'reviews' style={({isActive}) => isActive ? activeStyles : null}>
@@ -18,7 +19,7 @@ export default function Dashboard (){
 
                 <NavLink to = 'income' style={({isActive}) => isActive ? activeStyles : null}>
                 Income</NavLink>
-            </header>           
+            </nav>           
             <Outlet />
         </>
         

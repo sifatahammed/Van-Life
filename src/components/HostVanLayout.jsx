@@ -1,35 +1,26 @@
-import {NavLink, Outlet, Link } from "react-router-dom"
-import { useParams } from "react-router-dom"
 import React from "react"
+import { useParams, Link, NavLink, Outlet, useLoaderData } from "react-router-dom"
+import {requireAuth} from "./Auth.jsx"
+import {getHostVans} from "./loader.jsx"
 
-export default function HostVanLayout (){
-    const param = useParams()
-    const [currentVan, setcurrentVan] = React.useState(null)
-    const [loading, setLoading] = React.useState(true);
-    
-    React.useEffect(()=>{async function fetchdata(){
-        const res = await fetch(`/api/vans/${param.id}`)
-        const data = await res.json()
-        setcurrentVan(data.vans)
-        setLoading(false);}
 
-        fetchdata()
-    },[param.id]
-    )
-    
+export async function loader({ params, request }) {
+    await requireAuth(request)
+    return getHostVans(params.id)
+}
+
+export default function HostVanLayout() {
+    const currentVan = useLoaderData()
 
     const activeStyles = {
         fontWeight: "bold",
         textDecoration: "underline",
         color: "#161616"
     }
-   return (
-    <>
-        {loading ? (
-            <div className="spinner"></div>
-        ) : (
-            <section>
-                {currentVan ? (
+
+    return (
+         <section>
+        {currentVan ? (
                     <>
                         <Link
                             to=".."
@@ -89,7 +80,5 @@ export default function HostVanLayout (){
                     <h2>Failed to load van details. Please try again later.</h2>
                 )}
             </section>
-        )}
-    </>
-)
+    )
 }

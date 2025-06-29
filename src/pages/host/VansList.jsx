@@ -1,18 +1,20 @@
-import {Link} from "react-router-dom"
 import React from "react"
+import { Link, useLoaderData, Await, defer} from "react-router-dom"
+import { Suspense } from "react"
+import {getHostVans} from "../../components/loader.jsx"
+import {requireAuth} from "../../components/Auth.jsx"
 
-export default function VansList(){
-    const [vans, setVans] = React.useState([])
-    const [loading, setLoading] = React.useState(true)
+export async function loader({request}) {
+    await requireAuth(request)
+    return defer({vanList: getHostVans()})
+}
 
-    React.useEffect(() => {
-            fetch("/api/host/vans")
-                .then(res => res.json())
-                .then(data => {setVans(data.vans)
-                setLoading(false)})},[])
-                
-    
-        const hostVansEls = vans.map(van => (
+export default function VansList() {
+    const vans = useLoaderData()
+
+    function hostVansEls(vans){
+        return(
+            vans.map(van => (
             <Link
                 to={van.id}
                 key={van.id}
@@ -25,26 +27,19 @@ export default function VansList(){
                         <p>${van.price}/day</p>
                     </div>
                 </div>
-            </Link>
-        ))
-    
-    return(
+            </Link>))
+    )}
+
+    return (
         <section>
             <h1 className="host-vans-title">Your listed vans</h1>
             <div className="host-vans-list">
-                {
-                    loading ? (
-                        <div className="spinner"></div>
-
-                    ) : (
-                        <section>
-                            {hostVansEls}
-                        </section>
-                        )
-                }
+                <Suspense fallback={<div className="spinner"></div>}>
+                    <Await resolve={vans.vanList}>
+                        {vans=>hostVansEls(vans)}
+                    </Await>
+                </Suspense>
             </div>
         </section>
-        
-
     )
 }
