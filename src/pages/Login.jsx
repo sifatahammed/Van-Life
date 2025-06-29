@@ -6,6 +6,7 @@ import { useLoaderData,
     Form } from "react-router-dom"
 import { loginUser } from "../components/loader.jsx"
 
+
 export function loader({ request }) {
     return new URL(request.url).searchParams.get("message")
 }
@@ -19,6 +20,9 @@ export async function action({request}){
     try{
         const data = await loginUser({email, password})
         localStorage.setItem("loggedin", true)
+        // Optionally dispatch an event to notify other tabs
+        window.dispatchEvent(new StorageEvent("storage", { key: "loggedin", newValue: "true" }))
+
         return redirect(redirectTo)
     }catch(err){
         return err.message
@@ -51,6 +55,7 @@ export default function Login() {
     //         [name]: value
     //     }))
     // }
+   
     const error = useActionData()
     const Navigation = useNavigation()
     const message = useLoaderData()
@@ -60,7 +65,10 @@ export default function Login() {
             {message && <h3 className="red">{message}</h3>}
             {error && <h3 className="red">{error}</h3>}
 
-            <Form method = 'post' /* onSubmit={handleSubmit}*/ className="login-form" replace> 
+            <Form method = 'post' /* onSubmit={handleSubmit}*/ 
+            className="login-form" 
+            replace
+            > 
                 <input
                     name="email"
                     // onChange={handleChange}

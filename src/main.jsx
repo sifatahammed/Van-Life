@@ -16,6 +16,7 @@ import Photo from "./pages/host/Photo.jsx"
 import "./assets/server.js"
 import Layout from "./components/layout.jsx"
 import {requireAuth} from "./components/Auth.jsx"
+import { AuthProvider } from "./components/AuthContext.jsx"
 import Error from "./components/Error.jsx"
 import HostLayout from "./components/hostlayout.jsx"
 import HostVanLayout, {loader as HostVans } from "./components/HostVanLayout.jsx"
@@ -60,5 +61,7 @@ function App(){
 }
 
 createRoot(document.getElementById('root')).render(
-    <App />
+    <AuthProvider>
+        <App />
+    </AuthProvider>
 )

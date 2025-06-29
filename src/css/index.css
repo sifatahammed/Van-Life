@@ -545,31 +545,25 @@ i[class*='van-type-'] {
 }
 
 .login-link {
-    position: relative;
     display: inline-block;
 }
 
 .logout-button {
     display: none;
-    position: absolute;
-    top: 110%;
-    left: 20%;
-    transform: translate(50%, -50%);
     background: red;
     color: white;
     border: none;
-    border-radius: 5px;
+    border-radius: 50px;
     padding: 4px 8px;
     cursor: pointer;
+    font-weight: bold;
 }
 
-.login-container:hover .logout-button {
+.login-container .logout-button {
     display: block;
+    
 }
 
-.login-container {
-    position: relative;
-}
 
 .host-dashboard-earnings {
     background-color: #ffead0;
