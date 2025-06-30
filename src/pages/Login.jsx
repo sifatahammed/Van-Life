@@ -5,6 +5,7 @@ import { useLoaderData,
     useActionData, 
     Form } from "react-router-dom"
 import { loginUser } from "../components/loader.jsx"
+import { useAuth } from "../components/AuthContext"
 
 
 export function loader({ request }) {
@@ -19,7 +20,7 @@ export async function action({request}){
 
     try{
         const data = await loginUser({email, password})
-        localStorage.setItem("loggedin", true)
+        localStorage.setItem("loggedin", "true")
         // Optionally dispatch an event to notify other tabs
         window.dispatchEvent(new StorageEvent("storage", { key: "loggedin", newValue: "true" }))
 
@@ -59,6 +60,15 @@ export default function Login() {
     const error = useActionData()
     const Navigation = useNavigation()
     const message = useLoaderData()
+    const { logIn } = useAuth()
+
+    // ✅ Sync AuthContext after localStorage is set by `action`
+    React.useEffect(() => {
+        if (localStorage.getItem("loggedin") === "true") {
+            logIn()
+        }
+    }, [logIn])
+
     return (
         <div className="login-container">
             <h1>Sign in to your account</h1>
