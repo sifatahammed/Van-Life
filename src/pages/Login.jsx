@@ -74,6 +74,7 @@ export default function Login() {
             <h1>Sign in to your account</h1>
             {message && <h3 className="red">{message}</h3>}
             {error && <h3 className="red">{error}</h3>}
+            <h3>Email: "b@b.com"     Password: "p123"</h3>
 
             <Form method = 'post' /* onSubmit={handleSubmit}*/ 
             className="login-form" 
