@@ -49,11 +49,6 @@ This project was built as part of my learning journey with **React Router** and 
 
 ---
 
-## 📸 Preview
-
-> _Include screenshots here, or add a live demo link if hosted on Netlify/Vercel/GitHub Pages_
-
----
 
 
 ## 🚀 Run Locally
