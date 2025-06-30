@@ -1,5 +1,6 @@
- VanLife – A Modern React App for Van Rentals
-VanLife is a full-featured, single-page web application built with React Router, designed to simulate a van rental platform for hosts and customers. It demonstrates core concepts of modern React development, including:
+# 🚐 VanLife – React SPA for Van Rental Hosting
+
+**VanLife** is a full-featured, single-page web application built with React Router, designed to simulate a van rental platform for hosts and customers. It demonstrates core concepts of modern React development, including:
 
 - 🔐 Authentication (with protected routes and login redirect)
 
