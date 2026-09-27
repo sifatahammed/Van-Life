@@ -4,12 +4,11 @@
    <img
       alt="VanLife Logo"
       src="src/assets/logo.png"
-      width="300"
+      width="400"
       style="margin-top:-80px; margin-bottom:0; padding:0;"
     />
 </p>
 
-<h1 align="center">🚐 VanLife</h1>
 
 <p align="center">
   <strong>A React-based single-page van rental platform with customer browsing and authenticated host management.</strong>
