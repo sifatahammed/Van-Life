@@ -77,7 +77,7 @@ The application focuses heavily on modern React Router architecture, nested rout
 
 # ✨ Overview
 
-*#VanLife* is a full-featured React SPA designed to model the frontend architecture of a van rental marketplace.
+***#VanLife*** is a full-featured React SPA designed to model the frontend architecture of a van rental marketplace.
 
 The project goes beyond basic CRUD-style interfaces by implementing a structured routing and state-management architecture using **React Router**, **Context API**, and browser persistence.
 
@@ -817,7 +817,7 @@ MIT License © MD Sifat Ahammed Akash
 </div>
 
 <p align="center">
-  🚐 <strong>VanLife</strong> — Explore. Ride. Host.<br>
+  🚐 <strong>***#VanLife***</strong> — Explore. Ride. Host.<br>
   Built with ❤️ using React.
 </p>
 
