@@ -41,7 +41,7 @@
 </p>
 
 
-**#VanLife** is a modern React single-page application that simulates a **van rental marketplace** with two primary experiences:
+*#VanLife* is a modern React single-page application that simulates a **van rental marketplace** with two primary experiences:
 
 - 🧳 **Rental discovery for visitors**
 - 🏕️ **Authenticated management tools for van hosts**
@@ -77,7 +77,7 @@ The application focuses heavily on modern React Router architecture, nested rout
 
 # ✨ Overview
 
-**VanLife** is a full-featured React SPA designed to model the frontend architecture of a van rental marketplace.
+*#VanLife* is a full-featured React SPA designed to model the frontend architecture of a van rental marketplace.
 
 The project goes beyond basic CRUD-style interfaces by implementing a structured routing and state-management architecture using **React Router**, **Context API**, and browser persistence.
 
@@ -118,7 +118,7 @@ The project also demonstrates how a React application can separate:
 
 ## 🔐 Authentication
 
-VanLife includes a client-side authentication architecture with:
+*#VanLife* includes a client-side authentication architecture with:
 
 - Login form
 - Persistent authentication state
