@@ -829,26 +829,12 @@ This provides a natural path from a frontend learning project toward a full-stac
 
 ---
 
-## 📄 License
-
-This project is licensed under the **MIT License**.
-
-You are free to:
-- Use the project
-- Modify the source code
-- Distribute copies
-- Build upon the project
-
-See the [LICENSE](./LICENSE) file for details.
-
----
-
 ## 👨‍💻 Author
 
 <p align="center">
   <strong>MD Sifat Ahammed Akash</strong><br>
-  Computer Science & Engineering<br>
-  Bangladesh
+  Full-Stack Developer | Computer Science & Engineering
+  📧 Email: sifatahammed821@gmail.com
 </p>
 
 <p align="center">
@@ -856,6 +842,13 @@ See the [LICENSE](./LICENSE) file for details.
     <img src="https://img.shields.io/badge/GitHub-sifatahammed-181717?logo=github&style=for-the-badge" alt="GitHub Badge" />
   </a>
 </p>
+
+## 📄 License
+
+<div align="center">
+
+MIT License © MD Sifat Ahammed Akash
+</div>
 
 <p align="center">
   🚐 <strong>VanLife</strong> — Explore. Ride. Host.<br>
