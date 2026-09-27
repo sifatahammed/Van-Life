@@ -1,21 +1,14 @@
 <img src="https://capsule-render.vercel.app/api?type=waving&color=gradient&height=100&section=header" width="100%"/>
 
 <p align="center" style="margin:0; padding:0;">
-  <picture>
-    <!-- Dark mode logo -->
-    <source media="(prefers-color-scheme: dark)" srcset="public/logo-dark.png" />
+
     
-    <!-- Light mode logo -->
-    <source media="(prefers-color-scheme: light)" srcset="public/logo-light.png" />
-    
-    <!-- Fallback -->
     <img
       alt="VanLife Logo"
-      src="public/logo-light.png"
+      src="src/assets/logo.png"
       width="300"
       style="margin-top:-80px; margin-bottom:0; padding:0;"
     />
-  </picture>
 </p>
 
 <h1 align="center">🚐 VanLife</h1>
