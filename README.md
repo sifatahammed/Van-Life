@@ -41,7 +41,7 @@
 </p>
 
 
-** *#VanLife* ** is a modern React single-page application that simulates a **van rental marketplace** with two primary experiences:
+***#VanLife*** is a modern React single-page application that simulates a **van rental marketplace** with two primary experiences:
 
 - 🧳 **Rental discovery for visitors**
 - 🏕️ **Authenticated management tools for van hosts**
