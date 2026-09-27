@@ -7,14 +7,13 @@
       width="400"
       style="margin-top:-80px; margin-bottom:0; padding:0;"
     />
-   <p align="center">
+   
+</p>
+<p align="center">
    
    ### 🚐***#VanLife*** Live Demo: https://vanlife8.netlify.app/  
    
 </p>
-
-</p>
-
 
 <p align="center">
   <a href="https://vanlife8.netlify.app/">
