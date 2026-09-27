@@ -242,7 +242,7 @@ This makes the application easier to reason about and provides a foundation that
 The following diagram represents the application's route hierarchy, authentication layer, host console, and data-access flow.
 
 <p align="center">
-  <img src="./docs/vanlife-architecture.png" alt="VanLife Application Architecture Diagram" width="100%" />
+  <img src="src/assets/diagram .png" alt="VanLife Application Architecture Diagram" width="100%" />
 </p>
 
 ### Major Architectural Areas
