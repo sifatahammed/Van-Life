@@ -11,10 +11,6 @@
 
 
 <p align="center">
-  <strong>A React-based single-page van rental platform with customer browsing and authenticated host management.</strong>
-</p>
-
-<p align="center">
   <a href="https://vanlife8.netlify.app/">
     <img src="https://img.shields.io/badge/Live-Demo-success?style=for-the-badge" />
   </a>
@@ -559,9 +555,6 @@ vanlife/
 ├── vite.config.js
 └── README.md
 ```
-
-> *Note: Adjust the folder names above if your actual repository structure differs.*
-
 ---
 
 ## 🛠️ Tech Stack
@@ -801,29 +794,12 @@ This provides a natural path from a frontend learning project toward a full-stac
 
 ---
 
-## 📸 Screenshots
-
-> **Note:** Create the `docs/screenshots/` directory and add your screenshots if you want these sections enabled.
-
-### 🏠 Rental Discovery
-![VanLife Homepage](./docs/screenshots/home.png)
-
-### 🚐 Van Listings
-![Van Listings](./docs/screenshots/vans.png)
-
-### 🔐 Login
-![VanLife Login](./docs/screenshots/login.png)
-
-### 🏕️ Host Dashboard
-![Host Dashboard](./docs/screenshots/dashboard.png)
-
----
 
 ## 👨‍💻 Author
 
 <p align="center">
   <strong>MD Sifat Ahammed Akash</strong><br>
-  Full-Stack Developer | Computer Science & Engineering
+  Full-Stack Developer | Computer Science & Engineering <br>
   📧 Email: sifatahammed821@gmail.com
 </p>
 
