@@ -7,6 +7,8 @@
       width="400"
       style="margin-top:-80px; margin-bottom:0; padding:0;"
     />
+   ***#VanLife*** Live Demo: https://vanlife8.netlify.app/
+
 </p>
 
 
@@ -36,7 +38,7 @@
 ## 🌐 Live Demo
 <p align="center">
    
-   ### 🚐 Visit ***#VanLife*** Live Demo: https://vanlife8.netlify.app/
+   ### 🚐 Visit 
    
 </p>
 
