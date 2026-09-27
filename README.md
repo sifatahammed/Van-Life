@@ -36,7 +36,7 @@
 ## 🌐 Live Demo
 <p align="center">
    
-   ### 🚐 Visit *#VanLife* Live Demo: https://vanlife8.netlify.app/
+   ### 🚐 Visit ***#VanLife*** Live Demo: https://vanlife8.netlify.app/
    
 </p>
 
@@ -817,7 +817,7 @@ MIT License © MD Sifat Ahammed Akash
 </div>
 
 <p align="center">
-  🚐 ***#VanLife*** — Explore. Ride. Host.<br>
+  🚐 #VanLife — Explore. Ride. Host.<br>
   Built with ❤️ using React.
 </p>
 
