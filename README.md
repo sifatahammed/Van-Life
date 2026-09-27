@@ -7,7 +7,11 @@
       width="400"
       style="margin-top:-80px; margin-bottom:0; padding:0;"
     />
-   ***#VanLife*** Live Demo: https://vanlife8.netlify.app/
+   <p align="center">
+   
+   ### 🚐***#VanLife*** Live Demo: https://vanlife8.netlify.app/  
+   
+</p>
 
 </p>
 
@@ -36,11 +40,7 @@
 ---
 
 ## 🌐 Live Demo
-<p align="center">
-   
-   ### 🚐 Visit 
-   
-</p>
+
 
 
 ***#VanLife*** is a modern React single-page application that simulates a **van rental marketplace** with two primary experiences:
