@@ -32,15 +32,11 @@
 </p>
 
 ---
-
-## 🌐 Live Demo
-
 <p align="center">
-
+## 🌐 Live Demo
 ### 🚐 [Visit VanLife Live Demo](https://vanlife8.netlify.app/)
-
 </p>
-
+---
 VanLife is a modern React single-page application that simulates a **van rental marketplace** with two primary experiences:
 
 - 🧳 **Rental discovery for visitors**
