@@ -34,7 +34,6 @@
 ---
 
 ## 🌐 Live Demo
-
 <p align="center">
    
    ### 🚐 Visit #VanLife Live Demo: https://vanlife8.netlify.app/
