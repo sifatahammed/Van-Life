@@ -1,9 +1,7 @@
 <img src="https://capsule-render.vercel.app/api?type=waving&color=gradient&height=100&section=header" width="100%"/>
 
 <p align="center" style="margin:0; padding:0;">
-
-    
-    <img
+   <img
       alt="VanLife Logo"
       src="src/assets/logo.png"
       width="300"
