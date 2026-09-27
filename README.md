@@ -116,7 +116,7 @@ The project also demonstrates how a React application can separate:
 
 ## 🔐 Authentication
 
-*#VanLife* includes a client-side authentication architecture with:
+***#VanLife*** includes a client-side authentication architecture with:
 
 - Login form
 - Persistent authentication state
@@ -261,7 +261,7 @@ The following diagram represents the application's route hierarchy, authenticati
 
 ## 🧭 Routing Architecture
 
-VanLife uses a nested routing architecture.
+***#VanLife*** uses a nested routing architecture.
 
 At the top level, the application initializes the router and mounts the main application layout.
 
@@ -384,7 +384,7 @@ Host Console
 
 ## 📦 Data Flow
 
-VanLife follows a **route-driven data access model** leveraging React Router loaders.
+***#VanLife*** follows a **route-driven data access model** leveraging React Router loaders.
 
 ### Generic Data Retrieval Pipeline
 
@@ -573,7 +573,7 @@ vanlife/
 
 ## 🎨 UI & UX
 
-VanLife was designed with a focus on a straightforward rental experience.
+***#VanLife*** was designed with a focus on a straightforward rental experience.
 
 ### UI Principles
 * Clean navigation
