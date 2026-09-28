@@ -50,11 +50,6 @@
 
 The application focuses heavily on modern React Router architecture, nested routes, route loaders, protected routes, persistent authentication, dynamic filtering, and centralized application state.
 
-<p align="center">
-   
-   ### 🚐 ***#VanLife*** Live Demo: https://vanlife8.netlify.app/  
-   
-</p>
 
 ---
 
@@ -82,7 +77,11 @@ The application focuses heavily on modern React Router architecture, nested rout
 - [👨‍💻 Author](#-author)
 
 ---
-
+<p align="center">
+   
+   ### 🚐 ***#VanLife*** Live Demo: https://vanlife8.netlify.app/  
+   
+</p>
 # ✨ Overview
 
 ***#VanLife*** is a full-featured React SPA designed to model the frontend architecture of a van rental marketplace.
