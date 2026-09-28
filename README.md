@@ -10,7 +10,7 @@
    
 </p>
 
-<h1 align="center">🚐 VanLife</h1>
+<h1 align="center">🚐 #VanLife</h1>
 
 <p align="center">
   <strong>A React-based single-page van rental platform with customer browsing and authenticated host management.</strong>
@@ -25,9 +25,6 @@
   </a>
 </p>
 <p align="center">
-  <a href="https://vanlife8.netlify.app/">
-    <img src="https://img.shields.io/badge/Live-Demo-success?style=for-the-badge" />
-  </a>
   <a href="https://react.dev/">
     <img src="https://img.shields.io/badge/React-18+-61DAFB?logo=react&logoColor=black&style=for-the-badge" />
   </a>
@@ -45,11 +42,6 @@
   </a>
 </p>
 
-<p align="center">
-   
-   ### 🚐 ***#VanLife*** Live Demo: https://vanlife8.netlify.app/  
-   
-</p>
 
 ***#VanLife*** is a modern React single-page application that simulates a **van rental marketplace** with two primary experiences:
 
@@ -57,6 +49,12 @@
 - 🏕️ **Authenticated management tools for van hosts**
 
 The application focuses heavily on modern React Router architecture, nested routes, route loaders, protected routes, persistent authentication, dynamic filtering, and centralized application state.
+
+<p align="center">
+   
+   ### 🚐 ***#VanLife*** Live Demo: https://vanlife8.netlify.app/  
+   
+</p>
 
 ---
 
