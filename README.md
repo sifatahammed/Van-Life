@@ -819,7 +819,6 @@ MIT License © MD Sifat Ahammed Akash
 
 <p align="center">
 ⭐ If you find #VanLife useful, consider giving the repository a Star!
-
 🚐 #VanLife — Explore. Ride. Host.<br>
 Built with ❤️ using React.
 </p>
