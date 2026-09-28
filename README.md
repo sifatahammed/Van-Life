@@ -10,8 +10,20 @@
    
 </p>
 
+<h1 align="center">🚐 VanLife</h1>
 
+<p align="center">
+  <strong>A React-based single-page van rental platform with customer browsing and authenticated host management.</strong>
+</p>
 
+<p align="center">
+  <a href="https://vanlife8.netlify.app/">
+    <img src="https://img.shields.io/badge/Live-Demo-success?style=for-the-badge" />
+  </a>
+  <a href="https://github.com/sifatahammed/Van-Life">
+    <img src="https://img.shields.io/badge/GitHub-Repository-black?style=for-the-badge&logo=github" />
+  </a>
+</p>
 <p align="center">
   <a href="https://vanlife8.netlify.app/">
     <img src="https://img.shields.io/badge/Live-Demo-success?style=for-the-badge" />
