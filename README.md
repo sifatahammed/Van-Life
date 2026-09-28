@@ -796,14 +796,17 @@ This provides a natural path from a frontend learning project toward a full-stac
 ## 👨‍💻 Author
 
 <p align="center">
-  <strong>MD Sifat Ahammed Akash</strong><br>
-  Full-Stack Developer | Computer Science & Engineering <br>
-  📧 Email: sifatahammed821@gmail.com
+  <strong>MD Sifat Ahammed Akash</strong>
 </p>
-
 <p align="center">
+  Full-Stack Developer • React Developer • AI/ML Enthusiast
+</p>
+<p align="center">
+  <a href="mailto:sifatahammed821@gmail.com">
+    <img src="https://img.shields.io/badge/Email-sifatahammed821%40gmail.com-red?logo=gmail&logoColor=white" alt="Email" />
+  </a>
   <a href="https://github.com/sifatahammed">
-    <img src="https://img.shields.io/badge/GitHub-sifatahammed-181717?logo=github&style=for-the-badge" alt="GitHub Badge" />
+    <img src="https://img.shields.io/badge/GitHub-sifatahammed-black?logo=github" alt="GitHub" />
   </a>
 </p>
 
@@ -815,8 +818,10 @@ MIT License © MD Sifat Ahammed Akash
 </div>
 
 <p align="center">
-  🚐 #VanLife — Explore. Ride. Host.<br>
-  Built with ❤️ using React.
+⭐ If you find #VanLife useful, consider giving the repository a Star!
+
+🚐 #VanLife — Explore. Ride. Host.<br>
+Built with ❤️ using React.
 </p>
 
 <img src="https://capsule-render.vercel.app/api?type=waving&color=gradient&height=100&section=footer" width="100%"/>
